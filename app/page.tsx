@@ -42,6 +42,7 @@ type Copy = {
   mapTitle: string;
   mapIntro: string;
   addressLabel: string;
+  emailLabel: string;
   phoneLabel: string;
   footer: string;
 };
@@ -53,7 +54,7 @@ const copy: Record<Locale, Copy> = {
     hero: {
       badge: "Pharmaceutical distribution in Mozambique",
       title:
-        "EMS PHARMA LDA has delivered trusted pharmaceutical products since 2012.",
+        "EMS PHARMA LDA has delivered trusted pharmaceutical products since 2012",
       subtitle:
         "We distribute pharmaceuticals, cosmetics, consumables, hygiene, and cleaning products to pharmacies, hospitals, and clinics in Maputo, Beira, Nampula, Inhambane, Pemba, and Tete.",
     },
@@ -167,9 +168,10 @@ const copy: Record<Locale, Copy> = {
       message: "Message",
       submit: "Submit inquiry",
     },
-    mapTitle: "Our location",
+    mapTitle: "Contact Us",
     mapIntro: "Visit us or call our team.",
     addressLabel: "Address",
+    emailLabel: "Email",
     phoneLabel: "Cell",
     footer: "Call us on +258 84 305 2440 to learn more",
   },
@@ -179,7 +181,7 @@ const copy: Record<Locale, Copy> = {
     hero: {
       badge: "Distribuição farmacêutica em Moçambique",
       title:
-        "A EMS PHARMA LDA distribui produtos farmacêuticos de confiança desde 2012.",
+        "A EMS PHARMA LDA distribui produtos farmacêuticos de confiança desde 2012",
       subtitle:
         "Distribuímos produtos farmacêuticos, cosméticos, consumíveis, higiene e limpeza para farmácias, hospitais e clínicas em Maputo, Beira, Nampula, Inhambane, Pemba e Tete.",
     },
@@ -293,9 +295,10 @@ const copy: Record<Locale, Copy> = {
       message: "Mensagem",
       submit: "Enviar pedido",
     },
-    mapTitle: "A nossa localização",
+    mapTitle: "Contate-nos",
     mapIntro: "Visite-nos ou ligue para a nossa equipa.",
     addressLabel: "Morada",
+    emailLabel: "Email",
     phoneLabel: "Celular",
     footer: "Ligue para +258 84 305 2440 para saber mais",
   },
@@ -316,11 +319,10 @@ export default function Home() {
             <Image
               src="/logo.webp"
               alt="EMS Pharma logo"
-              width={32}
-              height={32}
+              width={100}
+              height={100}
               priority
             />
-            <span>EMS Pharma</span>
           </a>
           <nav aria-label="Primary" className="hidden gap-6 md:flex">
             <a href="#about" className="text-sm font-medium text-slate-600 hover:text-brand-600">{content.nav.about}</a>
@@ -357,7 +359,7 @@ export default function Home() {
           </dl>
         </div>
         <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
-          <Image src="/logo.webp" alt="EMS Pharma logo" width={900} height={1100} className="h-full w-full object-cover" priority />
+          <Image src="/stock/family-happy-bed.webp" alt="EMS Pharma logo" width={900} height={1100} className="h-full w-full object-cover" priority />
         </div>
       </section>
 
@@ -445,6 +447,7 @@ export default function Home() {
             <p className="mt-3 text-slate-600">{content.mapIntro}</p>
             <div className="mt-6 space-y-3 text-slate-700">
               <p><span className="font-semibold">{content.phoneLabel}:</span> +258 84 305 2440</p>
+              <p><span className="font-semibold">{content.emailLabel}:</span> info@ems-pharma.com</p>
               <p><span className="font-semibold">{content.addressLabel}:</span> Av. 25 de Setembro nr 2400 R/C, Maputo, Moçambique</p>
             </div>
           </div>
