@@ -1,3 +1,4 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Home from '@/app/page';
@@ -6,10 +7,10 @@ describe('Home page', () => {
   it('renders core brand and contact elements', () => {
     render(<Home />);
 
-    expect(screen.getByRole('img', { name: /ems property logo/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /ems pharma/i })).toBeInTheDocument();
+    expect(screen.getAllByRole('img', { name: /ems pharma logo/i }).length).toBeGreaterThan(0);
+    expect(screen.getByRole('heading', { level: 1, name: /ems pharma/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /our location/i })).toBeInTheDocument();
-    expect(screen.getByText(/\+258 84 305 2440/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/\+258 84 305 2440/i).length).toBeGreaterThan(0);
   });
 
   it('switches between english and portuguese content', async () => {
@@ -28,10 +29,20 @@ describe('Home page', () => {
     const user = userEvent.setup();
     render(<Home />);
 
-    const toggle = screen.getByRole('button', { name: /do you support nationwide distribution in mozambique\?/i });
-    expect(screen.getByText(/yes\./i)).toBeInTheDocument();
+    const toggle = screen.getByRole('button', {
+      name: /do you support nationwide distribution in mozambique\?/i,
+    });
+    expect(
+      screen.getByText(
+        /yes\. we actively supply maputo, beira, nampula, inhambane, pemba, and tete\./i,
+      ),
+    ).toBeInTheDocument();
 
     await user.click(toggle);
-    expect(screen.queryByText(/^yes\.$/i)).not.toBeInTheDocument();
+    expect(
+      screen.queryByText(
+        /yes\. we actively supply maputo, beira, nampula, inhambane, pemba, and tete\./i,
+      ),
+    ).not.toBeInTheDocument();
   });
 });

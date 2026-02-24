@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'EMS Pharma | Healthcare distribution in Mozambique',
+  title: 'EMS PHARMA LDA | Pharmaceutical distribution in Mozambique',
   description:
-    'EMS Pharma (EMS Property) imports, exports, stores, and distributes healthcare products with quality-focused international partnerships.',
+    'EMS PHARMA LDA distributes pharmaceutical, cosmetic, consumable, hygiene, and cleaning products across major Mozambican markets.',
   icons: {
     icon: '/favicon.png'
   }
