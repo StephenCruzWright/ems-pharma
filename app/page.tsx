@@ -390,6 +390,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      <section id="cover" className="section-shell py-20">
+        <Image src="/stock/family-bicycle.webp" alt="Family on a bicycle" width={2000} height={2000} className="h-full w-full object-cover" priority />
+      </section>
 
       <section id="partners" className="section-shell py-20">
         <h2 className="text-3xl font-bold tracking-tight">{content.partnersTitle}</h2>
@@ -397,7 +401,7 @@ export default function Home() {
         <p className="mt-8 rounded-xl border border-brand-100 bg-brand-50 p-5 text-brand-900">{content.warehouse}</p>
       </section>
 
-      <section id="therapeutic-areas" className="section-shell py-20">
+      <section id="categories" className="section-shell py-20">
         <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="text-3xl font-bold tracking-tight">{content.therapeuticTitle}</h2>
@@ -430,7 +434,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-y border-slate-200 bg-white py-20">
+      <section id="faq" className="border-y border-slate-200 bg-white py-20">
         <div className="section-shell grid gap-8 lg:grid-cols-[1fr_1.1fr]">
           <div>
             <h2 className="text-3xl font-bold tracking-tight">{content.faqTitle}</h2>
