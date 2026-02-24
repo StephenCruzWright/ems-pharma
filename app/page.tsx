@@ -346,7 +346,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">{content.hero.title}</h1>
           <p className="max-w-2xl text-lg leading-8 text-slate-600">{content.hero.subtitle}</p>
           <div className="flex flex-wrap gap-3">
-            <a href="#about" className="rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white hover:bg-brand-800">{content.cta.primary}</a>
+            <a href="#about" className="rounded-full bg-brand-1000 px-6 py-3 text-sm font-semibold text-white hover:bg-brand-1200">{content.cta.primary}</a>
             <a href="#contact" className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 hover:border-brand-500 hover:text-brand-600">{content.cta.secondary}</a>
           </div>
           <dl className="grid gap-4 pt-4 sm:grid-cols-2">
@@ -359,7 +359,7 @@ export default function Home() {
           </dl>
         </div>
         <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
-          <Image src="/stock/family-happy-bed.webp" alt="EMS Pharma logo" width={900} height={1100} className="h-full w-full object-cover" priority />
+          <Image src="/stock/family-happy-bed.webp" alt="Family in a happy bed" width={900} height={1100} className="h-full w-full object-cover" priority />
         </div>
       </section>
 
@@ -391,8 +391,8 @@ export default function Home() {
         </div>
       </section>
       
-      <section id="cover" className="section-shell py-20">
-        <Image src="/stock/family-bicycle.webp" alt="Family on a bicycle" width={2000} height={2000} className="h-full w-full object-cover" priority />
+      <section id="cover" className="section-shell py-20 lg:grid-cols-[1.1fr_0.9fr] ">
+        <Image src="/stock/family-bicycle.webp" alt="Family on a bicycle" width={2000} height={2000} className="rounded-xl h-full w-full object-cover" priority />
       </section>
 
       <section id="partners" className="section-shell py-20">
@@ -457,14 +457,14 @@ export default function Home() {
           </div>
           <iframe title="EMS PHARMA Maputo location" src="https://www.google.com/maps?q=Av.+25+de+Setembro+2400,+Maputo,+Mozambique&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="h-80 w-full rounded-2xl border border-slate-200" />
         </div>
-        <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-brand-800 to-brand-600 p-10 text-white">
+        <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-brand-1000 to-brand-800 p-10 text-white">
           <h2 className="text-3xl font-bold tracking-tight">{content.contactTitle}</h2>
           <p className="mt-3 max-w-3xl text-white/90">{content.contactIntro}</p>
           <form className="mt-8 grid gap-4 sm:grid-cols-2">
             <input type="text" placeholder={content.form.fullName} className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 placeholder:text-white/70" />
             <input type="email" placeholder={content.form.email} className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 placeholder:text-white/70" />
             <textarea placeholder={content.form.message} rows={4} className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 placeholder:text-white/70 sm:col-span-2" />
-            <button type="button" className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-700 sm:col-span-2 sm:w-fit text-slate-500">{content.form.submit}</button>
+            <button type="button" className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-700 hover:text-brand-600 sm:col-span-2 sm:w-fit text-slate-500">{content.form.submit}</button>
           </form>
         </div>
       </section>
