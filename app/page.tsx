@@ -311,7 +311,7 @@ export default function Home() {
   return (
     <main>
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="section-shell flex h-16 items-center justify-between gap-4">
+        <div className="section-shell flex items-center justify-between gap-4 py-1">
           <a
             href="#"
             className="flex items-center gap-3 text-lg font-bold tracking-tight text-brand-800"
@@ -319,8 +319,8 @@ export default function Home() {
             <Image
               src="/logo.webp"
               alt="EMS Pharma logo"
-              width={100}
-              height={100}
+              width={150}
+              height={150}
               priority
             />
           </a>
