@@ -60,7 +60,7 @@ const copy: Record<Locale, Copy> = {
     },
     metrics: [
       { value: "2012", label: "Operating since" },
-      { value: "2", label: "Shareholders" },
+      { value: "14+", label: "Brands" },
       { value: "20+", label: "Years management market experience" },
       { value: "6", label: "Mozambican provinces actively served" },
     ],
@@ -187,7 +187,7 @@ const copy: Record<Locale, Copy> = {
     },
     metrics: [
       { value: "2012", label: "Em operação desde" },
-      { value: "2", label: "Sócios" },
+      { value: "14+", label: "Marcas" },
       { value: "20+", label: "Anos de experiência da gestão" },
       { value: "6", label: "Províncias servidas ativamente" },
     ],
