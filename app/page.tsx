@@ -464,7 +464,7 @@ export default function Home() {
             <input type="text" placeholder={content.form.fullName} className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 placeholder:text-white/70" />
             <input type="email" placeholder={content.form.email} className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 placeholder:text-white/70" />
             <textarea placeholder={content.form.message} rows={4} className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 placeholder:text-white/70 sm:col-span-2" />
-            <button type="button" className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-700 hover:text-brand-600 sm:col-span-2 sm:w-fit text-slate-500">{content.form.submit}</button>
+            <button type="button" className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-700 hover:text-brand-600 sm:col-span-2 sm:w-fit text-slate-800">{content.form.submit}</button>
           </form>
         </div>
       </section>
